@@ -141,7 +141,6 @@ def play():
 	print (Back.GREEN + "Let's play Battleship!")
 	print(Style.RESET_ALL)
 
-
 	for turn in range(n_try):
 		
 		if ships != []:	
@@ -215,7 +214,7 @@ while ng == 'y':
 	board_size, n_ships, n_try = new_game()
 	create_board(board_size)
 	create_Ship()
-	detail_ship(ships) #TESTING Perpesus
+	detail_ship(ships) #TESTING Perpesus comment if real game.
 	play()
 	if game_over(board, ships)	!= 'y':
 		ng = 'n'
@@ -224,30 +223,4 @@ while ng == 'y':
 	
 
 
-	
 
-
-
-	
-#if guess_row == ship_row and guess_col == ship_col:
-#    print ("Congratulations! You sunk one battleship!")
-#   break
-#else:
-#    if (guess_row < 0 or guess_row > b_size - 1) or (guess_col < 0 or guess_col > b_size - 1):
-#		  print ("Oops, that's not even in the ocean.")
-#	   elif(board[guess_row][guess_col] == "X"):
-#		  print ("You guessed that one already.")
-#	   else:
-#		  print ("You missed my battleship!")
-#		  board[guess_row][guess_col] = "X"
-#		  
-#	   if turn == 3:
-#		  print ('Game Over')
-#		  
-#			
-#	# Print (turn + 1) here!
-#	print ('Turn', turn + 1)
-#	board[ship_col][ship_row] = 'S'
-#	print_board(board)
-#	print ('Ship located at: ', ship_col, ship_row)
-#
