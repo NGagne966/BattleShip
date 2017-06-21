@@ -4,4 +4,4 @@ python:
 install: 
     - pip install colorama
 script: 
-    - python Battleship.py
+    - python Battleship.py < testing.txt
