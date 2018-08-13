@@ -4,10 +4,14 @@ from colorama import init
 init()
 
 from colorama import Fore, Back, Style
+
+# Test I don't know
 from random import randint
 
 
 
+def TEST():
+	pass
 
 def random_row(board):
 	return randint(0, len(board) - 1)
