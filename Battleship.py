@@ -11,6 +11,7 @@ from random import randint
 
 
 def TEST():
+	# Test more test
 	pass
 
 def random_row(board):
